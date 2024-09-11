@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#anchorTags {
+    color: black;
+    text-decoration: none;
+}
+
+#anchorTags:hover{
+    color: rgb(213, 98, 26);
+    cursor: pointer;
+}
+
+#nav_section2{
+    display: flex; justify-content: space-around; align-items: center;
+}
+
+#nav_section3{
+    display: none;
+}
+
+#bar1 ,#bar2, #bar3{
+    display: none;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+    #nav_section2{
+        display: none;
+    }
+    #nav_section3{
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    #bar1 ,#bar2, #bar3{
+        display: block;
+        width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 6px 0 0;
+  transition: 0.4s;
+    }
+}

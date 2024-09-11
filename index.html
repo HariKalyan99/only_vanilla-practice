@@ -3,38 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        #anchorTags {
-            color: black;
-            text-decoration: none;
-        }
-
-        #anchorTags:hover{
-            color: rgb(213, 98, 26);
-            cursor: pointer;
-        }
-    </style>
     <title>ONLY Vannila</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav id="navigation_bar" style="width: 100%; border: 1px black solid; height: 70px; display: flex; justify-content: space-between; background-color: #f4dfcb; box-shadow: 1px 1px 5px black;">
-        <ul style="height: 100%; display: flex; justify-content: center; align-items: center;">
+        <ul style="height: 100%; display: flex; justify-content: center; align-items: center;" id="nav_section1">
             <li>
                     <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/06/21152539/sun-coffee-cafe-by-town-brandcrowd.png" alt="logo" style="height: 50px;">
             </li>
         </ul>
-        <ul style="list-style: none; display: flex; justify-content: space-around; align-items: center; width: 60%; height: 100%; margin-right: 10px;">
+        <ul style="list-style: none; width: 60%; height: 100%; margin-right: 10px;" id="nav_section2">
             <li><a href="#" id="anchorTags">About us</a></li>
             <li><a href="#" id="anchorTags">Gallery</a></li>
             <li><a href="#" id="anchorTags">Products</a></li>
             <li><a href="#" id="anchorTags">ContactUs</a></li>
+        </ul>
+        <ul id="nav_section3">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
         </ul>
     </nav>
 </body>
