@@ -26,7 +26,21 @@ function onLoad(){
             <strong >"Coffee is a language in itself." - Jackie Chan</strong>
         </div>`
 
-        head.append(head_div)
+    head.append(head_div)
+
+    // api call
+
+    fetchApi();
+
+}
+
+async function fetchApi(){
+    try {
+        const {data} = await axios.get('https://api.sampleapis.com/coffee/hot');
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 
